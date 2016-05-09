@@ -15,13 +15,20 @@ $email_address = $_GET['email'];
 $message = $_GET['message'];
 
 // create email body and send it
+// $to = 'qinanj22@gmail.com'; // put your email
+// $email_subject = "Contact form submitted by:  $name";
+// $email_body = "You have received a new message. \n\n".
+// 				  " Here are the details:\n \nName: $name \n ".
+// 				  "Email: $email_address \n Message \n $message";
+// $headers = "From: $email_address \n";
+// $headers .= "Reply-To: $email_address";
+// mail($to,$email_subject,$email_body,$headers);
+// return true;
 $to = 'qinanj22@gmail.com'; // put your email
-$email_subject = "Contact form submitted by:  $name";
-$email_body = "You have received a new message. \n\n".
-				  " Here are the details:\n \nName: $name \n ".
-				  "Email: $email_address \n Message \n $message";
-$headers = "From: $email_address \n";
-$headers .= "Reply-To: $email_address";
+$email_subject = "Test";
+$email_body = "This is a test.";
+$headers = 'From: yeiq36@gmail.com';
+$headers .= 'Reply-To: yeiq36@gmail.com';
 mail($to,$email_subject,$email_body,$headers);
 return true;
 ?>
