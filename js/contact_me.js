@@ -25,7 +25,7 @@ $(function() {
         }
         $.ajax({
           url: "../bin/contact_me.php",
-          type: "SEND",
+          type: "POST",
           data: {name: name, email: email, message: message},
           cache: false,
           success: function() {
