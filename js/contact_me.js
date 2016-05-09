@@ -24,8 +24,8 @@ $(function() {
           firstName = name.split(' ').slice(0, -1).join(' ');
         }
         $.ajax({
-          url: "../bin/contact_me.php",
-          type: "GET",
+          url: "./bin/contact_me.php",
+          type: "POST",
           crossDomain: true,
           data: {name: name, email: email, message: message},
           cache: false,
