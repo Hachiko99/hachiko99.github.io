@@ -1,4 +1,5 @@
 <?php
+header("Access-Control-Allow-Origin: *");
 // check if fields passed are empty
 if(empty($_POST['name'])  		||
    empty($_POST['email']) 		||
