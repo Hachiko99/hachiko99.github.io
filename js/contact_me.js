@@ -25,8 +25,8 @@ $(function() {
         }
         $.ajax({
           url: "./bin/contact_me.php",
-          type: "GET",
-          crossDomain: true,
+          type: "POST",
+          crossDomain: false,
           data: {name: name, email: email, message: message},
           cache: false,
           success: function() {
