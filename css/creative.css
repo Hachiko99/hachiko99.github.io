@@ -47,8 +47,9 @@ h6 {
 
 p {
     margin-bottom: 20px;
-    font-size: 16px;
+    font-size: 20px;
     line-height: 1.5;
+    font-family: 'Open Sans', 'Pacifico', 'Oswald';
 }
 
 .bg-primary {
@@ -478,4 +479,42 @@ img::-moz-selection {
 
 body {
     webkit-tap-highlight-color: #222;
+}
+
+.flip-container {
+  position: relative;
+  perspective: 1000;
+}
+.flip-container:hover .flipper,
+.flip-container.hover .flipper {
+  transform: rotateY(180deg);
+}
+.flip-container,
+.flip-container .front,
+.flip-container .back {
+  -moz-border-radius: 100px;
+  -webkit-border-radius: 100px;
+  border-radius: 100px;
+  width: 500px;
+  height: 500px;
+  overflow: hidden;
+}
+.flip-container .flipper {
+  transition: 0.6s;
+  transform-style: preserve-3d;
+  position: relative;
+}
+.flip-container .flipper .front,
+.flip-container .flipper .back {
+  backface-visibility: hidden;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+.flip-container .flipper .front {
+  z-index: 2;
+  transform: rotateY(0deg);
+}
+.flip-container .flipper .back {
+  transform: rotateY(180deg);
 }
