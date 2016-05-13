@@ -42,7 +42,7 @@ h3,
 h4,
 h5,
 h6 {
-  font-family: 'Open Sans','Helvetica Neue',Arial,sans-serif;
+  font-family: Merriweather,'Helvetica Neue',Arial,sans-serif;
 }
 
 p {
@@ -521,4 +521,7 @@ body {
 }
 .flip-container .flipper .back {
   transform: rotateY(180deg);
+}
+ul{
+  font-family:'sans-serif';
 }
